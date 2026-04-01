@@ -2,12 +2,20 @@
 # yarn lockfile v1
 
 
-"@actions/core@1.6.0":
-  version "1.6.0"
-  resolved "https://registry.yarnpkg.com/@actions/core/-/core-1.6.0.tgz#0568e47039bfb6a9170393a73f3b7eb3b22462cb"
-  integrity sha512-NB1UAZomZlCV/LmJqkLhNTqtKfFXJZAUPcfl/zqG7EfsQdeUJtaWO98SGbuQ3pydJ3fHl2CvI/51OKYlCYYcaw==
+"@actions/core@3.0.0":
+  version "3.0.0"
+  resolved "https://registry.yarnpkg.com/@actions/core/-/core-3.0.0.tgz#89cb07c119e9b46a649ad5f355e77de9b3108cf8"
+  integrity sha512-zYt6cz+ivnTmiT/ksRVriMBOiuoUpDCJJlZ5KPl2/FRdvwU3f7MPh9qftvbkXJThragzUZieit2nyHUyw53Seg==
   dependencies:
-    "@actions/http-client" "^1.0.11"
+    "@actions/exec" "^3.0.0"
+    "@actions/http-client" "^4.0.0"
+
+"@actions/exec@^3.0.0":
+  version "3.0.0"
+  resolved "https://registry.yarnpkg.com/@actions/exec/-/exec-3.0.0.tgz#8c3464d20f0aa4068707757021d7e3c01a7ee203"
+  integrity sha512-6xH/puSoNBXb72VPlZVm7vQ+svQpFyA96qdDBvhB8eNZOE8LtPf9L4oAsfzK/crCL8YZ+19fKYVnM63Sl+Xzlw==
+  dependencies:
+    "@actions/io" "^3.0.2"
 
 "@actions/github@5.0.0":
   version "5.0.0"
@@ -25,6 +33,19 @@
   integrity sha512-VRYHGQV1rqnROJqdMvGUbY/Kn8vriQe/F9HR2AlYHzmKuM/p3kjNuXhmdBfcVgsvRWTz5C5XW5xvndZrVBuAYg==
   dependencies:
     tunnel "0.0.6"
+
+"@actions/http-client@^4.0.0":
+  version "4.0.0"
+  resolved "https://registry.yarnpkg.com/@actions/http-client/-/http-client-4.0.0.tgz#f9754133c22802466482bf96321d42f2dba1fc82"
+  integrity sha512-QuwPsgVMsD6qaPD57GLZi9sqzAZCtiJT8kVBCDpLtxhL5MydQ4gS+DrejtZZPdIYyB1e95uCK9Luyds7ybHI3g==
+  dependencies:
+    tunnel "^0.0.6"
+    undici "^6.23.0"
+
+"@actions/io@^3.0.2":
+  version "3.0.2"
+  resolved "https://registry.yarnpkg.com/@actions/io/-/io-3.0.2.tgz#6f89b27a159d109836d983efa283997c23b92284"
+  integrity sha512-nRBchcMM+QK1pdjO7/idu86rbJI5YHUKCvKs0KxnSYbVe3F51UfGxuZX4Qy/fWlp6l7gWFwIkrOzN+oUK03kfw==
 
 "@eslint/eslintrc@^1.0.5":
   version "1.0.5"
@@ -860,7 +881,7 @@ tr46@~0.0.3:
   resolved "https://registry.yarnpkg.com/tr46/-/tr46-0.0.3.tgz#8184fd347dac9cdc185992f3a6622e14b9d9ab6a"
   integrity sha1-gYT9NH2snNwYWZLzpmIuFLnZq2o=
 
-tunnel@0.0.6:
+tunnel@0.0.6, tunnel@^0.0.6:
   version "0.0.6"
   resolved "https://registry.yarnpkg.com/tunnel/-/tunnel-0.0.6.tgz#72f1314b34a5b192db012324df2cc587ca47f92c"
   integrity sha512-1h/Lnq9yajKY2PEbBadPXj3VxsDDu844OnaAo52UVmIzIvwwtBPIuNvkjuzBlTWpfJyUbG3ez0KSBibQkj4ojg==
@@ -876,6 +897,11 @@ type-fest@^0.20.2:
   version "0.20.2"
   resolved "https://registry.yarnpkg.com/type-fest/-/type-fest-0.20.2.tgz#1bf207f4b28f91583666cb5fbd327887301cd5f4"
   integrity sha512-Ne+eE4r0/iWnpAxD852z3A+N0Bt5RN//NjJwRd2VFHEmrywxf5vsZlh4R6lixl6B+wz/8d+maTSAkN1FIkI3LQ==
+
+undici@^6.23.0:
+  version "6.24.1"
+  resolved "https://registry.yarnpkg.com/undici/-/undici-6.24.1.tgz#9df1425cede20b836d95634347946f79578b7e71"
+  integrity sha512-sC+b0tB1whOCzbtlx20fx3WgCXwkW627p4EA9uM+/tNNPkSS+eSEld6pAs9nDv7WbY1UUljBMYPtu9BCOrCWKA==
 
 universal-user-agent@^5.0.0:
   version "5.0.0"
